@@ -1,0 +1,53 @@
+
+.FCFLEM {
+    float: left;
+    display: table;
+    margin-left: 10px;
+}
+
+.FCFLEM span{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+nav {
+    font-family: "dyno_saurB";
+    padding: 10px;
+    background-color: var(--fond);
+    color: white;
+    margin : 0;
+    top : 0;
+    width: 100%;
+    background-attachment: fixed;
+	position: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li {
+    margin-right: 15px;
+    float: right;
+    padding: 14px ;
+    display: block;
+}
+
+nav li:hover {
+    background-color: var(--secfond);
+}
+
+nav li:active {
+    background-color: var(--principal);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
