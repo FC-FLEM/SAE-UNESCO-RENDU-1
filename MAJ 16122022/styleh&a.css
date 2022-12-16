@@ -1,0 +1,181 @@
+:root {
+    --principal: #ea5c0d;
+    --seccolor : #b94503;
+    --jaune : #f7af3e;
+    --fond : #333333;
+    --secfond : #505050;
+  }
+
+@font-face {
+	font-family: "dyno_saur";
+	src: url('./fonts/Dyno/Dyno\ Regular.ttf');
+}
+
+@font-face {
+    font-family: "dyno_saurB";
+    src: url('./fonts/Dyno/Dyno\ Bold.ttf');
+}
+
+@font-face {
+    font-family: "dyno_saurI";
+    src: url('./fonts/Dyno/Dyno\ Italic.ttf');
+}
+
+@font-face {
+    font-family: "cicle_base";
+    src: url('./fonts/Cicle/Cicle\ Gordita.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "dyno_saur";
+	margin: 0;
+	letter-spacing: 2px;
+	position: relative;
+    background-color: var(--secfond);
+    display: grid;
+    grid-template-columns: auto 0px; 
+}
+
+.contenu  {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 40px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px #333333;
+    font-family: "dyno_saurB";
+    color: var(--principal);
+    font-size: 3.5em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titre2gauche>h2  {
+    text-transform: uppercase;
+    font-family: "dyno_saurB";
+    color: white;
+    background: url(./img/trianglegauche.png);
+    background-repeat: no-repeat;
+    height: 120px;
+    line-height: 72px;
+    padding-left: 120px;
+    font-size: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.titre2droite>h2  {
+    text-transform: uppercase;
+    font-family: "dyno_saurB";
+    color: white;
+    background: url(./img/triangledroite.png);
+    background-repeat: no-repeat;
+    height: 120px;
+    line-height: 72px;
+    padding-left: 120px;
+    font-size: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+h3 {
+    font-family: "dyno_saur";
+    color: var(--jaune);
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+h3:before, h3:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+  }
+h3:before {
+    margin-right: 10px
+  }
+h3:after {
+    margin-left: 10px
+  }
+
+.card {
+    font-size: 200%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    background-color: var(--fond);
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+.image {
+    display: flex;
+    width: 30%;
+    min-height: 100%;
+    border-radius: 15px;
+}
+
+.texte {
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    text-align: center; 
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 150%;
+}
+
+.image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.texte button{
+    background-color: #f7af3e;
+    margin: 15px;
+    padding: 10px;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 80px;
+    border: none;
+    width: 25%;
+    height: 40%;
+
+}
+
+.texte button:hover{
+    background-color: #b94503;
+}
+
+.texte button:active{
+    background-color: #ea5c0d;
+}

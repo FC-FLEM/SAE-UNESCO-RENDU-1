@@ -1,0 +1,215 @@
+:root {
+  --principal: #ea5c0d;
+  --seccolor : #b94503;
+  --jaune : #f7af3e;
+  --fond : #333333;
+  --secfond : #505050;
+}
+
+@font-face {
+font-family: "dyno_saur";
+src: url('./fonts/Dyno/Dyno\ Regular.ttf');
+}
+
+@font-face {
+  font-family: "dyno_saurB";
+  src: url('./fonts/Dyno/Dyno\ Bold.ttf');
+}
+
+@font-face {
+  font-family: "dyno_saurI";
+  src: url('./fonts/Dyno/Dyno\ Italic.ttf');
+}
+
+@font-face {
+  font-family: "cicle_base";
+  src: url(./fonts/Cicle/Cicle\ Gordita.ttf);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "dyno_saur";
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
+  position: relative;
+  background-color: var(--secfond);
+}
+
+
+.avisiter {
+  background: url(./img/alhambra-grenade-fr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  max-width: 100%;
+  margin: 0;
+  text-align: bottom;
+  padding: 10%;
+}
+
+.avisiter p {
+  color: #FFFFFF;
+  font-size: x-large;
+  text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 55px black, 0 0 75px black;
+}
+
+.culture p {
+  color: #FFFFFF;
+  font-size: x-large;
+  text-align: center;
+}
+
+h4 {
+  color: #FFFFFF;
+  font-family: "dyno_saurB";
+  font-size: 20px;
+}
+
+button {
+  color: white;
+  background-color: #f7af3e;
+  font-family: "dyno_saurB";
+  font-size: 100%;
+  border-radius: 15px;
+  border: none;
+  width: 200px;
+  height: 50px;
+}
+
+button:hover {
+  color: white;
+  background-color: #b94503;
+  box-shadow: 7px 7px 7px black;
+}
+
+button:active {
+  color: white;
+  background-color: #ea5c0d;
+}
+
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.restos_hotels {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  background-color: #33333340;
+  height: 5%;
+  border-radius: 15px;
+}
+
+.restos_hotels:hover{
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.imgsortir {
+  overflow: hidden;
+  display: flex;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.txtrestos_hotels {
+  width: 70%;
+  color: white;
+  margin-left: 10px;
+  text-align: left center;
+}
+
+.doubledivision {
+  display: flex;
+  text-align: justify;
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.meteo_trafic {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #22222240;
+  padding: 5px 10px;
+  width: 45%;
+  border-radius: 15px;
+}
+
+.meteo_trafic:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.meteo_trafic p {
+  color: black;
+  font-family: "dyno_saurB";
+}
+
+.reservation {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  padding: 5px 10px;
+  width: cover;
+  justify-content: space-around;
+  align-content: space-around;
+  margin:2%;
+  border-radius: 15px;
+}
+
+.reservation:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  border-top: 20px solid #f7af3e;
+  scroll-behavior: smooth;
+}
+
+/* CODE POUR UN SLIDER MAIS POUR LE FAIRE EN MUY BUENO: INTEGRER DU PHP/JS !
+.slider {
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slides {
+  width: calc(1200px * 2);
+  animation: glisse 10s infinite;
+}
+
+.slide {
+    float: left;  
+  }
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1200px);
+  }
+  60% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+  
+}
+*/
