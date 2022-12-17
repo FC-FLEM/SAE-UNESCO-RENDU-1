@@ -78,6 +78,11 @@ font-size: 12px;
     border-bottom: none;
     background-color: RGBa(200,200,200,0) ;
     }
+
 .sous li:hover{
-    background-color: RGBa(200,200,200,0.1);
+    background-color: #505050;
+}
+
+.sous li:active{
+    background-color: #f7af3e;
 }
