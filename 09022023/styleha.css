@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "cicle_fin";
+    src: url('./fonts/Cicle/Cicle\ Fina.ttf');
+}
+
+.texte>p {
+    color: #FFFFFF;
+    margin: 10px;
+    font-size: 21px;
+    font-family: "cicle_fin";
+    text-align: justify;
+    text-align-last: center;
+}

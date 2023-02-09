@@ -1,0 +1,442 @@
+
+:root {
+    --principal: #ea5c0d;
+    --seccolor : #b94503;
+    --jaune : #f7af3e;
+    --fond : #333333;
+    --secfond : #505050;
+  }
+
+@font-face {
+	font-family: "dyno_saur";
+	src: url('./fonts/Dyno/Dyno\ Regular.ttf');
+}
+
+@font-face {
+    font-family: "dyno_saurB";
+    src: url('./fonts/Dyno/Dyno\ Bold.ttf');
+}
+
+@font-face {
+    font-family: "dyno_saurI";
+    src: url('./fonts/Dyno/Dyno\ Italic.ttf');
+}
+
+@font-face {
+    font-family: "cicle_base";
+    src: url(./fonts/Cicle/Cicle\ Gordita.ttf);
+}
+
+.Histoire ul {
+    font:.75em "lucida grande", arial, sans-serif;
+    overflow:auto;
+    width:570px;
+    padding:0 0 30px 30px;
+    margin:30px auto;
+    background:#eee;
+    list-style:none;
+}
+
+.Histoire li {
+    width:160px;
+    height:160px;
+    overflow:hidden;
+    float:left;
+    margin:30px 30px 0 0;
+}
+
+.Histoire p {
+    height:40px;
+    padding:0 10px;
+    opacity:.8;
+    color:#fff;
+    background:#000;
+    -webkit-transition: margin-top .2s ease-out;
+    -moz-transition: margin-top .2s ease-out;
+    transition: margin-top .2s ease-out;
+}
+
+.Histoire li:hover p {
+    margin-top:-40px;
+}
+
+.Histoire h4 {
+    display:block;
+    padding-top:3px;
+    font-weight:700;
+}
+
+#leones {
+    margin-left: 25%;
+}
+
+table {
+    margin: auto;
+}
+
+.tableau {
+    width:100%;
+    border-width: 1px;
+    border-collapse: collapse;
+    
+}
+
+.tableau th {
+    background-color:#ea5c0d;
+    border-width: 1px;
+    padding: 8px;
+    text-align:left;
+}
+
+.tableau tr {
+    background-color:#ea5c0d40;
+}
+
+.tableau td {
+    border-width: 1px;
+    padding: 8px;
+}
+
+.tableau tr:hover {
+    background-color:#f7af3e70;
+}
+
+.mainimg{
+    background: url(./img/Grenade/Alhambra_sunset.jpg);
+    background-repeat: no-repeat;
+    margin: 0!important;
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+    max-width: 100%;
+    background-size: cover;
+    margin-bottom: 25px!important;
+}
+
+.mainimg p {
+    color: #FFFFFF;
+    font-size: x-large;
+    text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 55px black, 0 0 75px black;
+}
+
+.contenu .mainimg button{
+    color: white;
+    background-color: #f7af3e;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 80px;
+    border: none;
+    width: 10%;
+    height: 50px;
+    margin: auto;
+}
+
+.btn1 {
+    margin-top: 2%!important;
+    margin-bottom: 2%!important;
+    margin-left: 40%!important;
+}
+
+.contenu button:hover{
+    color: white;
+    background-color: #b94503;
+}
+
+.contenu button:active{
+    color: white;
+    background-color: #ea5c0d;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.acces {
+    padding: 1%;
+    outline: 3px dashed #f7af3e;
+    outline-offset: 0px;
+    background-color: #f7af3e40;
+    font-family: "dyno_saur";
+    text-align: center;
+}
+
+.contenu .acces button{
+    color: white;
+    background-color: #f7af3e;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 80px;
+    border: none;
+    width: 10%;
+    height: 50px;
+    margin: auto;
+}
+
+.acces button{
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: var(--jaune);
+    background: linear-gradient(0deg, var(--jaune) 0%, var(--principal) 100%);
+    color: white;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 10px;
+}
+
+.acces button:hover{
+    color: #f7af3e;
+    border: solid 5px #f7af3e;
+    background: transparent;
+    box-shadow:none;
+}
+
+.patios {
+    display: flex;
+    text-align: justify;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.palaisNas {
+    display: flex;
+    text-align: justify;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 2%;
+    border-radius: 15px;
+}
+  
+.cardcol:hover {
+    box-shadow: 0 8px 16px 0 black;
+}
+
+.cardcol{
+    background-color: var(--fond);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: auto;
+    align-items: center;
+    justify-content:start;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+    flex-direction: column;
+}
+
+.imagecol {
+    height: 420px;
+    min-width: 360px;
+    width: 100%;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+/*div contenant le texte (card)*/
+.textecol {
+    margin: 0 60px;
+    max-width: 660px;
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    text-align: center; 
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 150%;
+}
+
+/*image à l'intérieur de la div contenant l'image (card)*/
+.imagecol>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.histoire {
+    float:left;
+    width: 20%;
+    padding-right: 1%;
+}
+
+.arte {
+
+    float: right;
+    width: 20%;
+}
+
+.indiceimg {
+    width: 30%;
+    overflow: hidden;
+    display: flex;
+    border-radius: 15px;
+}
+
+.indiceimg:hover{
+    transform: scale(1.5);
+}
+
+.Palais button{
+    color: white;
+    background-color: #f7af3e;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 80px;
+    border: none;
+    width: 400%;
+    height: 50px;
+}
+
+.Palais button:hover{
+    color: white;
+    background-color: #b94503;
+}
+
+.Palais button:active{
+    color: white;
+    background-color: #ea5c0d;
+}
+
+.Jardins{
+    margin-bottom: 2%;
+}
+
+.History {
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    font:.75em "dyno_saur", arial, sans-serif;
+    overflow:auto;
+}
+
+.histoire{
+    width: 50%;
+}
+
+.histoire p {
+    height:auto;
+    padding:0 10px;
+    opacity:0;
+    color:#fff;
+    font-size: large;
+    display: none;
+    background: rgba(0,0,0,0.7);
+
+}
+
+.histoire:hover .histoire-image{
+    opacity: 0;
+}
+
+.histoire:hover p{
+    opacity: 1; 
+    margin-top:-65%;
+    padding: 5%;
+    display: block;
+    -webkit-transition: margin-top .2s ease-out;
+    -moz-transition: margin-top .2s ease-out;
+    transition: margin-top .2s ease-out;
+    
+}
+
+.histoire-image{
+    width: 100%;
+}
+
+  
+@media(max-width: 1140px){
+    .btn1 {
+        margin-left: 30%!important;
+    }
+
+    #leones {
+        margin-left: 0;
+    }
+
+    .contenu  {
+        color: #fff;
+        margin-top: 60px;
+        padding: 1%;
+    }    
+
+    h2 {
+        background: initial;
+        min-height: 50px;
+        line-height: 50px;
+        font-size: 35px;
+        height: auto;
+        overflow: initial;
+        white-space: initial;
+		margin-top: 10px;
+        padding : 10px;
+        text-align:center;
+        background-color: #b94402;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    img:not(.FCFLEM) {
+        width: 100%!important;
+    }
+
+    .patios{
+        flex-direction: column;
+    }
+
+    .palaisNas{
+        flex-direction: column;
+    }
+
+    .cardpetit{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .cardpetit1{
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    
+}
+
+
+
+@media (max-width: 700px){
+    .tableau thead {
+    display: none;
+    }
+
+    .tableau caption{
+    margin-left: 80%;
+    }
+    
+    .tableau tr{
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    .tableeau td {
+    display: block;
+    text-align: right;
+    }
+    
+    }
