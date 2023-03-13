@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.FCFLEM img{
+    width: 200px;
+    margin-top: auto;
+    cursor: pointer;
+    }
+    
+header{
+    padding-top: 5px;
+    z-index: 999;
+    position: fixed;
+    background-color: #333333;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+    }
+ 
+header .NAVI{
+    position: relative;
+    line-height: 40px;
+}
+
+header .NAVI .menu{
+    position: relative;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    user-select: none;
+}
+
+.lang img{
+    margin-top: 70%;
+}
+
+.menu li>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 1px 10px;
+    }
+
+header .item:hover{
+background-color: #f7af3e;
+transition: 0.3s;
+}
+
+header ul::after{
+content: "";
+clear: both;
+}
+
+.deroulant > a::after{
+content:" ▼";
+font-size: 12px;
+}
+
+.sous {
+    position:absolute;
+    line-height: 40px;
+    background-color: #333333;
+    list-style: none;
+    box-shadow: 0px 1px 2px #CCC;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    overflow: hidden;
+    
+}
+
+.sous li{
+    position: relative;
+    padding: 2px 0;
+}
+
+.deroulant:hover .sous{
+    pointer-events: all;
+    transform: translateY(0);
+    opacity: 1;
+    transition:0.3s;
+}
+
+.sous li:hover{
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.scroll{
+    position: fixed;
+    top:0px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #f7af3e;
+    transition: width 0.3s ease-in-out;
+}
+
+@media (max-width:1140px){
+
+    .FCFLEM img{
+        width: 200px!important;
+    }
+
+    header .NAVI .menu{
+        position: fixed;
+        top: 60px;
+        left:-100%;
+        visibility: hidden;
+        display: block;
+        background: #333333;
+        list-style: none;
+        min-width: 300px;
+        height: 100%;
+        justify-content: center;
+        padding: 20px 20px;
+        overflow-y:auto;
+        transition: 0.5s;
+        transition-property: left, visibility; 
+    }
+
+    header .NAVI .menu.active{
+        left:0;
+        visibility: visible;
+    }
+
+    header .item:hover{
+        background-color: transparent;
+        }
+        
+    .menu .item{
+        position: relative;
+    }
+
+    .sous{
+        opacity: 1;
+        position: relative;
+        top:0;
+        transform: translateX(0px);
+        background-color: #4a4a4a;
+        overflow: hidden;
+        box-shadow: none;
+    }
+
+    .sous li:active{
+        background-color:#f7af3e;
+        transition: 0.3s;
+    }
+
+    .lang {
+        display: inline-block;
+        margin-top: auto;
+        margin-bottom: 10vh;
+    }
+
+    .menu .nonde a:hover{
+        color: #f7af3e;
+        transition: 0.3s;
+    }
+
+    .menu .nonde a:active{
+        color:white;
+        background-color: #f7af3e;
+    }
+    
+}

@@ -1,0 +1,337 @@
+
+:root {
+    --principal: #ea5c0d;
+    --seccolor : #b94503;
+    --jaune : #f7af3e;
+    --fond : #333333;
+    --secfond : #505050;
+  }
+
+@font-face {
+	font-family: "dyno_saur";
+	src: url('./fonts/Dyno/Dyno\ Regular.ttf');
+}
+
+@font-face {
+    font-family: "dyno_saurB";
+    src: url('./fonts/Dyno/Dyno\ Bold.ttf');
+}
+
+@font-face {
+    font-family: "dyno_saurI";
+    src: url('./fonts/Dyno/Dyno\ Italic.ttf');
+}
+
+@font-face {
+    font-family: "cicle_base";
+    src: url(./fonts/Cicle/Cicle\ Gordita.ttf);
+}
+
+.mainimg{
+    background: url(./img/Grenade/Alhambra_sunset.jpg);
+    background-repeat: no-repeat;
+    margin: 0!important;
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+    max-width: 100%;
+    background-size: cover;
+    margin-bottom: 25px!important;
+    background-position: bottom;
+}
+
+.mainimg p {
+    color: #FFFFFF;
+    font-size: x-large;
+    text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 55px black, 0 0 75px black;
+}
+
+.contenu button{
+    color: white;
+    background-color: #f7af3e;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 80px;
+    border: none;
+    width: 10%;
+    height: 50px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.contenu .acces button{
+    color: white;
+    background-color: #f7af3e;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 80px;
+    border: none;
+    width: 10%;
+    height: 50px;
+    margin: auto;
+}
+
+.acces button{
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: var(--jaune);
+    background: linear-gradient(0deg, var(--jaune) 0%, var(--principal) 100%);
+    color: white;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 10px;
+}
+
+.acces button:hover{
+    color: #f7af3e;
+    border: solid 5px #f7af3e;
+    background: transparent;
+    box-shadow:none;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.histoire {
+    float:left;
+    width: 20%;
+    padding-right: 1%;
+    border-radius: 15px;
+}
+
+.History {
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    font:.75em "dyno_saur", arial, sans-serif;
+    overflow:auto;
+}
+
+.histoire{
+    width: 50%;
+}
+
+.histoire p {
+    height:auto;
+    padding:0 10px;
+    opacity:0;
+    color:#fff;
+    font-size: large;
+    display: none;
+    background: rgba(0,0,0,0.7);
+
+}
+
+.histoire:hover .histoire-image{
+    opacity: 0;
+}
+
+.histoire:hover p{
+    opacity: 1; 
+    margin-top:-65%;
+    padding: 5%;
+    display: block;
+    -webkit-transition: margin-top .2s ease-out;
+    -moz-transition: margin-top .2s ease-out;
+    transition: margin-top .2s ease-out;
+    
+}
+
+.histoire-image{
+    width: 100%;
+}
+
+.Palais {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    background-color: #33333340;
+    border-radius: 15px;
+}
+
+.Palais:hover{
+    box-shadow: 0 8px 16px 0 black;
+}
+
+
+
+.cardcol:hover {
+    box-shadow: 0 8px 16px 0 black;
+}
+
+.cardcol{
+    background-color: var(--fond);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: auto;
+    align-items: center;
+    justify-content:start;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+    flex-direction: column;
+}
+
+.imagecol {
+    height: 420px;
+    min-width: 360px;
+    width: 100%;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+/*div contenant le texte (card)*/
+.textecol {
+    margin: 0 60px;
+    max-width: 660px;
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    text-align: center; 
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 150%;
+}
+
+/*image à l'intérieur de la div contenant l'image (card)*/
+.imagecol>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.palaisNas {
+    display: flex;
+    text-align: justify;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 2%;
+    border-radius: 15px;
+}
+
+.acces {
+    padding: 1%;
+    outline: 3px dashed #f7af3e;
+    outline-offset: 0px;
+    background-color: #f7af3e40;
+    font-family: "dyno_saur";
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+.tableau {
+    width:100%;
+    border-width: 1px;
+    border-collapse: collapse;
+    
+}
+
+.tableau th {
+    background-color:#ea5c0d;
+    border-width: 1px;
+    padding: 8px;
+    text-align:left;
+}
+
+.tableau tr {
+    background-color:#ea5c0d40;
+}
+
+.tableau td {
+    border-width: 1px;
+    padding: 8px;
+}
+
+.tableau tr:hover {
+    background-color:#f7af3e70;
+}
+
+@media(max-width: 1140px){
+
+    h1{
+        font-size: 44px;
+    }
+
+    .contenu button{
+        width: 50%;
+    }
+    
+    .contenu  {
+        color: #fff;
+        margin-top: 60px;
+        padding: 1%;
+    } 
+
+    .palaisNas{
+        flex-direction: column;
+    }
+
+    .Palais{
+        flex-direction: column;
+        width: 97%;
+    }
+
+    .cardpetit{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .cardpetit1{
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .contenu button{
+        width: 50%;
+    }
+
+    .Palaistxt{
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px){
+    .tableau thead {
+    display: none;
+    }
+
+    .tableau caption{
+    margin-left: 80%;
+    }
+    
+    .tableau tr{
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    .tableeau td {
+    display: block;
+    text-align: right;
+    }
+    
+    }

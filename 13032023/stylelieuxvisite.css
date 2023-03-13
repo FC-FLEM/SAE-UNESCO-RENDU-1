@@ -1,0 +1,111 @@
+
+ .carrousel {
+    display:flex;
+    justify-content: space-around;
+    margin-left: 1%;
+    margin-right: 1%;
+    min-height: 800px;
+  }
+
+   .carrousel > div{
+    margin: auto;
+  }
+ 
+ [data-carrousel] {
+    position: relative;
+    width: 920px;
+    margin-left: 1%;
+    margin-right: 1%;
+ }
+ 
+ [data-carrousel] > div {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    object-fit: contain;
+ }
+ 
+ [data-carrousel] > div.shown {
+   opacity: 1;
+   z-index: 1;
+ }
+
+ [data-carrousel] > div.before {
+   opacity: 0.25;
+   transform : translate(-200px);
+   z-index: 0;
+   zoom: 90%;
+ }
+
+ [data-carrousel] > div.after {
+   opacity: 0.25;
+   transform : translate(200px);
+   z-index: 0;
+   zoom: 90%;
+ }
+
+.arrow-left {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid transparent;
+    border-top: 16px solid transparent;
+    border-right: 20px solid #f7af3e;
+    padding: 0;
+    z-index: 2;
+}
+
+.arrow-right {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid transparent;
+    border-top: 16px solid transparent;
+    border-left: 20px solid #f7af3e;
+    z-index: 2;
+}
+
+.cadre-lieu {
+    width: 920px;
+    min-height: 540px;
+    box-shadow: 15px 15px 60px rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+    margin:auto;
+    background-size: cover;
+    position: relative;
+}
+
+#photo-1-1 {
+    background-image: url(./img/Grenade/Alhambra_red_sunset.jpg);
+}
+
+#photo-1-2 {
+    background-image: url(/img/Grenade/Alhambra_red_sunset.jpg);
+}
+
+#photo-1-3 {
+    background-image: url(/img/Grenade/Comares.jpg);
+}
+
+.description-cadre {
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.description-cadre > p {
+    display: none;
+}
+
+.description-cadre:hover p{
+    display: block;
+}

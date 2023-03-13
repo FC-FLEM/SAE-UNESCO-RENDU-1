@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- Doctype pour rester comforme aux standards -->
+<!-- lang pour accent pour synthèse vocale-->
+<html lang="fr">
+<head>
+    <!-- charset = encodage des caractères -->
+    <meta charset="UTF-8" />
+    <!-- viewport pour la mise en page mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- link pour relier la feuille css -->
+    <link rel="stylesheet" href="styleliste.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico">
+    <!-- Title pour le titre de l'onglet -->
+    <title>Parcours</title>
+    <style>
+        .map{
+            display: none;
+        }
+        .map.active{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="scroll"></div>
+        <div class="FCFLEM">
+            <img src="./img/logo_Grenade.png" alt="FCFLEM">
+        </div>
+        <div class="NAVI">
+            <ul class="menu">
+                <li class="item nonde"><a href="accueil.html">Accueil</a></li>
+                <li class="item deroulant"><a>A Visiter</a>
+                    <ul class="sous">
+                        <li><a href="./lieux_visite.html">Lieux à visiter </a></li>
+                        <li><a href="./spots_photos.html">Meilleurs spots de photos</a></li>
+                    </ul>
+                </li>
+                <li class="item deroulant"><a>Culture</a>
+                    <ul class="sous">
+                        <li><a href="./espagne.html">L'Espagne</a></li>
+                        <li><a href="./histoire_architecture.html">Histoire et Architecture</a></li>
+                        <li><a href="./quizz.html">Quizz</a></li>
+                    </ul>
+                </li>
+                <li class="item deroulant"><a>Sortir</a>
+                    <ul class="sous">
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="parcours.html">Parcours </a></li>
+                        <li><a href="hotels.html">Hôtels</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item nonde"><a href="./infos_pratiques.html">Informations Pratiques</a></li>
+                <li class="item nonde"><a href="./a_propos.html">A Propos</a></li>
+                <li class="item lang"><a href="./lstpages_es.html"
+                    target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="es"
+                        width="15px" height="15px"></a></li>
+            <li class="item lang"><a href="./lstpages_en.html"
+                    target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="en"
+                        width="15px" height="15px"></a></li>
+            <li class="item lang"><a href="./lstpages.html"
+                    target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" alt="fr"
+                        width="15px" height="15px"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="contenu">
+        <h1>Parcours dans Grenade</h1>
+
+        <form>
+            <fieldset><legend>Durée du parcours</legend>
+            <label><input type="radio" name="duree" value="1h" checked>1 heure</label>
+            <label><input type="radio" name="duree" value="2h">2 heures</label>
+            <label><input type="radio" name="duree" value="4h">4 heures</label>
+            </fieldset>
+            <br>
+            <fieldset><legend>Avec plus de culture</legend>
+            <label><input type="radio" name="culture" value="sansculture" checked>Sans culture</label>
+            <label><input type="radio" name="culture" value="culture">Avec culture</label>
+            </fieldset>
+            <br>
+            <fieldset><legend>Moment de la journée</legend>
+            <label><input type="radio" name="moment" value="nuit" checked>Nuit</label>
+            <label><input type="radio" name="moment" value="jour">Jour</label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Afficher la carte">
+        </form>
+
+        <div id="reponsesuser"></div>
+
+        <!-- PARCOURS DE 1HEURE-->
+        <iframe id="1cj" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1iLsbVqt3VecizbjXzObFQNIqRWM_N1I&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="1sj" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=12z4IkBH5UBvts_tHLDjDls8rPD5PFY8&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="1cn" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1VPn51_nOeyzjJIOGrItnM6YcDMxBj_o&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="1sn" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1n1SMgq-WFS0sxrSePY4qKsGGUWQOLv8&ehbc=2E312F"  width="640" height="480"></iframe>
+        <!-- PARCOURS DE 1HEURE-->
+        <iframe id="2sj" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1oQRaOz_dDBN2w4LASMVpMes44R-4Osk&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="2cj" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1COD7zopOv0xuvdFme41_xGPjRbADXkM&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="2cn" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1P0DPgBlbLPg2NqykMWSBIx-7iddJ5R4&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="2sn" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1VDJqNNZHURmZ7PI5_Ygn0afytQ8fLy8&ehbc=2E312F" width="640" height="480"></iframe>
+        <!-- PARCOURS DE 1HEURE-->
+        <iframe id="4sn" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1u3HJ_E_l1X6IXAYg9aJ0AQg6h0j5Luc&ehbc=2E312F"  width="640" height="480"></iframe>
+        <iframe id="4cn" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1rX7yUOtkPj8QGvF-k1kPEuqKCKOgRt0&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="4sj" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=10owCBpz18R1mhUSRrfe-47gmMtSCCc4&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe id="4cj" class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1xLXs5DjqPms21WT26XB7NDl6eUK-xxA&ehbc=2E312F" width="640" height="480"></iframe>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+    <footer>
+        <table>
+            <tr>
+                <h3>Partenaires officiels</h3>
+                <div class="partner">
+                <img src="./img/MCN.png" alt="MCN">
+                <img src="./img/UNIGE.png" alt="UNIVERSITE">
+                <img src="./img/UNESCO-logo.png" alt="UNESCO">
+            </div>
+            </tr>
+            <tr>
+                <td class="ttext">
+                    <a href="a_propos.html#Source">Source</a>
+                    <span>●</span>
+                    <a href="lstpages.html">Plan du site</a>
+                    <span>●</span>
+                    <a href="a_propos.html">La team</a>
+                </td>
+                <td class="social">
+                    <a href="https://www.tiktok.com/@grenadeunesco"><img src="./img/tiktok.png"></a>
+                    <a href="https://www.instagram.com/ff.grenade/"><img src="./img/insta.png"></a>
+                    <a href="https://i.kym-cdn.com/entries/icons/mobile/000/035/557/Hi_Bingus.jpg"><img src="./img/twitter.png"></a>
+                    <a href="https://i.kym-cdn.com/entries/icons/mobile/000/035/557/Hi_Bingus.jpg"><img src="./img/facebook.png"></a>
+                    <a href="https://i.kym-cdn.com/entries/icons/mobile/000/035/557/Hi_Bingus.jpg"><img src="./img/youtube.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="rights">
+                        Copyright © 2023 ⋅ Tous droits réservés
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script>
+        //fonction pour récupérer les réponses du form
+        function reponsesUser() {
+        const form = document.querySelector('form');
+        const reponses = {};
+          reponses.duree = form.querySelector('input[name="duree"]:checked').value;
+          reponses.culture = form.querySelector('input[name="culture"]:checked').value;
+          reponses.moment = form.querySelector('input[name="moment"]:checked').value;
+          return reponses;
+        }
+        
+        //les variables
+        var form = document.querySelector('form');
+        var boutonAfficherCarte = form.querySelector('input[type="submit"]');
+        var conteneurReponses = document.querySelector('#reponsesuser');
+        
+        //si submit est cliqué
+        boutonAfficherCarte.addEventListener('click', function(event) {
+          event.preventDefault(); // pour pas que la page se refresh / que action de form soit éxec
+          var elementsActifs = document.querySelectorAll('.active');
+          elementsActifs.forEach(function(element) {
+            element.classList.remove('active');
+            });
+          var reponses = reponsesUser();
+          var cartetrouvee = "";
+
+          //affiche pour la vérif
+          //conteneurReponses.innerHTML = ''; //TEST VERIF SUR PAGE HTML
+          for (var cle in reponses) {
+            //var element = document.createElement('p'); //TEST VERIF SUR PAGE HTML
+            //element.textContent = reponses[cle].slice(0,1); //TEST VERIF SUR PAGE HTML
+            cartetrouvee += reponses[cle].slice(0,1);
+            //conteneurReponses.appendChild(element); //TEST VERIF SUR PAGE HTML
+          };
+          //element.textContent = cartetrouvee; //TEST VERIF SUR PAGE HTML
+          //conteneurReponses.appendChild(element); //TEST VERIF SUR PAGE HTML
+
+          var carteactive = document.getElementById(cartetrouvee);
+          carteactive.classList.add("active");
+        });
+
+        
+      </script>
+</body>
+</html>
