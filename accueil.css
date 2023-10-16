@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "cicle_title";
+    src: url('./fonts/Dyno/Dyno\ Regular.ttf');
+}
+
+@font-face {
+    font-family: "cicle_ss_title";
+    src: url('./fonts/Cicle/Cicle\ Semi\ Italic.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 20px solid white;
+  }
+
+.accueil a{
+    position: absolute;
+    right:calc(50% - 16px);
+    bottom: 15%;
+}
+
+.accueil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.2)),url("./img/Grenade/background-accueil.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#titre-accueil {
+    font-family : "cicle_title";
+    font-size: 5rem!important;
+    color: white!important;
+}
+
+#sous-titre-accueil {
+    font-family : "cicle_ss_title";
+    font-size: 2rem!important;
+    color: white!important;
+}
+
+h3{
+    text-align: center;
+    margin: 4% 0;
+}
+
+.accueil-infos p{
+    width:70%;
+}
+.accueil-infos h5{
+    width:fit-content;
+}
+
+.hess{
+    margin-top: 4%;
+    width:fit-content!important;
+}
+
+.accueil-infos p,
+.accueil-infos h5,
+.accueil-infos a{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenu{
+    margin-top: 70px;
+}

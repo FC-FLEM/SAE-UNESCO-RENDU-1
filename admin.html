@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Doctype pour rester comforme aux standards -->
+<!-- lang pour accent pour synthèse vocale-->
+<html lang="fr">
+
+<head>
+    <!-- charset = encodage des caractères -->
+    <meta charset="UTF-8" />
+    <!-- viewport pour la mise en page mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link pour relier la feuille css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="connexion.css" />
+    <!-- Title pour le titre de l'onglet -->
+    <title>Page Admin</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico">
+    
+</head>
+
+<body>
+    <div class="contenu">
+        <a href="./accueil.php">
+            <button class="bouton" type="button">
+                Revenir page acceuil
+            </button>
+        </a>
+        <h1>Page Administrateur</h1>
+
+        <div class="multibox">
+            <a href="./formshotel.php"><div class="carte mb-hotel"><div class="emoji">🏩</div><div class="emoji-legende">Hotels</div></div></a>
+            <a href="./formsrestaurants.php"><div class="carte mb-resto"><div class="emoji">🥗</div><div class="emoji-legende">Restaurants</div></div></a>
+            <a href="./formsspots.php"><div class="carte mb-spots"><div class="emoji">🛣️</div><div class="emoji-legende">Spots Photos</div></div></a>
+            <a href="./formslieux.php"><div class="carte mb-lieux"><div class="emoji">🚲</div><div class="emoji-legende">Lieux Visites</div></div></a>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

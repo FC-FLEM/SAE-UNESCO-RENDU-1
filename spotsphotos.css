@@ -1,0 +1,72 @@
+
+ .carrousel {
+    display:flex;
+    justify-content: space-around;
+    margin-left: 1%;
+    margin-right: 1%;
+    min-height: 600px;
+  }
+
+   .carrousel > div{
+    margin: auto;
+  }
+ 
+ [data-carrousel] {
+    position: relative;
+    width: 400px;
+    margin-left: 1%;
+    margin-right: 1%;
+ }
+ 
+ [data-carrousel] > div {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    object-fit: contain;
+ }
+ 
+ [data-carrousel] > div.shown {
+   opacity: 1;
+   z-index: 1;
+ }
+
+ [data-carrousel] > div.before {
+   opacity: 0.25;
+   transform : translate(-200px);
+   z-index: 0;
+   zoom: 90%;
+ }
+
+ [data-carrousel] > div.after {
+   opacity: 0.25;
+   transform : translate(200px);
+   z-index: 0;
+   zoom: 90%;
+ }
+
+.arrow-left {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid transparent;
+    border-top: 16px solid transparent;
+    border-right: 20px solid #f7af3e;
+    padding: 0;
+    z-index: 2;
+}
+
+.arrow-right {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid transparent;
+    border-top: 16px solid transparent;
+    border-left: 20px solid #f7af3e;
+    z-index: 2;
+}
+
+@media screen and (min-height: 1000px) {
+  .gap{
+    min-height:100vh;
+  }
+}

@@ -1,0 +1,83 @@
+.mainimg{
+    background: url(./img/Grenade/Alhambra_sunset.jpg);
+    background-repeat: no-repeat;
+    margin: 0!important;
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+    max-width: 100%;
+    background-size: cover;
+    margin-bottom: 25px!important;
+    background-position: bottom;
+}
+
+.mainimg p {
+    color: #FFFFFF;
+    font-size: x-large;
+    text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 55px black, 0 0 75px black;
+}
+
+button {
+    color: white;
+    background-color: #f7af3e;
+    font-family: "dyno_saurB";
+    font-size: 100%;
+    border-radius: 15px;
+    border: none;
+    width: 215px;
+    height: 55px;
+    margin: auto auto;
+}
+  
+  button:hover {
+    color: white;
+    background-color: #b94503;
+    box-shadow: 7px 7px 7px black;
+  }
+  
+  button:active {
+    color: white;
+    background-color: #ea5c0d;
+  }
+
+.buttn{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    color:#ea5c0d;
+    font-size: 35px;
+}
+
+.chiffre{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.chiffre ul{
+    list-style-type: none;
+}
+
+.chiffon{
+    padding-bottom: 30px;
+}
+
+h5{
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.vocab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.lan{
+    margin:20px
+}

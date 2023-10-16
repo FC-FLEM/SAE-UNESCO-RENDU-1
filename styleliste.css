@@ -1,0 +1,329 @@
+
+:root {
+    --principal: #ea5c0d;
+    --seccolor : #b94503;
+    --jaune : #f7af3e;
+    --fond : #333333;
+    --secfond : #505050;
+  }
+
+@font-face {
+	font-family: "dyno_saur";
+	src: url('./fonts/Dyno/Dyno\ Regular.ttf');
+}
+
+@font-face {
+    font-family: "dyno_saurB";
+    src: url('./fonts/Dyno/Dyno\ Bold.ttf');
+}
+
+@font-face {
+    font-family: "dyno_saurI";
+    src: url('./fonts/Dyno/Dyno\ Italic.ttf');
+}
+
+@font-face {
+    font-family: "cicle_base";
+    src: url('./fonts/Cicle/Cicle\ Gordita.ttf');
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "dyno_saur";
+	letter-spacing: 2px;
+    background-color: var(--secfond);
+}
+
+.contenu  {
+    color: #fff;
+    padding: 40px;
+    margin-top: 60px;
+    min-height: 80vh;
+}
+
+.contenu ul {
+    padding-left: 2%;
+}
+
+/*titre principal de la page*/
+h1 {
+    text-shadow: 1px 1px 2px #333333;
+    font-family: "dyno_saurB";
+    color: var(--principal);
+    font-size: 3.5em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    font-family: "dyno_saurB",sans-serif;
+    color: white;
+    background: url(./img/h2.png);
+    background-repeat: no-repeat;
+    height: 120px;
+    line-height: 72px;
+    padding-left: 120px;
+    font-size: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    list-style-position: outside;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+
+.contenu a {
+    color : #fff;
+}
+
+.top{
+    text-decoration: none;
+    padding: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 90px;
+    position: sticky;
+    bottom: 20px; 
+    place-self: end;
+    margin-top: 50vh;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.top::before{
+    content: "Haut ";
+}
+
+
+@media((min-width: 800px) and (min-height:900px)){
+    .contenu a {
+        font-size: 5vh;
+    }
+    
+    .contenu{
+        font-size: 3vh;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

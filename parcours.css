@@ -1,0 +1,75 @@
+.contenu form {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+
+}
+
+.contenu {
+  margin-top: 100px !important;
+}
+
+.gap{
+  min-height:20vh;
+}
+
+legend {
+  font-weight: bold;
+}
+
+input[type="radio"]:checked+label {
+  background-color: #ea5c0d;
+  transform: translate(5px, 5px) !important;
+  box-shadow: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+
+.contenu label {
+  display: block;
+  margin-bottom: 10px;
+  background-color: #f7af3e;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 5px 3px #ea780d;
+}
+
+.btncarte {
+  font-size: 20px;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ea5c0d;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.map {
+  display: none;
+}
+
+.map.mapactive {
+  display: block;
+}
+
+#reponsesuser {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-height: 2500px) {
+  .gap{
+    min-height:100vh;
+  }
+}

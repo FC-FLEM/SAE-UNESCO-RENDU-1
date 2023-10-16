@@ -1,0 +1,132 @@
+.carrousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    min-height: 600px;
+  }
+  
+  .carrousel > .arrow-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Ajout de cette ligne */
+    margin-top: 150px;
+    width: 90%;
+    max-width: 920px;
+  }
+  
+  .carrousel > div {
+    margin: auto;
+  }
+  
+  [data-carrousel] {
+    position: relative;
+    width: 100%;
+    max-width: 920px;
+    margin: auto;
+  }
+  
+  [data-carrousel] > div {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    object-fit: contain;
+  }
+  
+  [data-carrousel] > div.shown {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  [data-carrousel] > div.before {
+    opacity: 0.25;
+    transform: translateX(-50%);
+    z-index: 0;
+    zoom: 90%;
+  }
+  
+  [data-carrousel] > div.after {
+    opacity: 0.25;
+    transform: translateX(50%);
+    z-index: 0;
+    zoom: 90%;
+  }
+  
+  .arrow-left {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid transparent;
+    border-top: 16px solid transparent;
+    border-right: 20px solid #f7af3e;
+    padding: 0;
+    z-index: 2;
+  }
+  
+  .arrow-right {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid transparent;
+    border-top: 16px solid transparent;
+    border-left: 20px solid #f7af3e;
+    z-index: 2;
+  }
+  
+  .cadre-lieu {
+    width: 100%;
+    max-width: 920px;
+    height: 100%;
+    min-height: 540px;
+    box-shadow: 15px 15px 60px rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+    margin: auto;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .description-cadre {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .description-cadre > p {
+    display: none;
+  }
+  
+  .description-cadre:hover p {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carrousel {
+      min-height: 400px;
+    }
+  
+    [data-carrousel] {
+      max-width: 100%;
+    }
+  
+    .arrow-container {
+      width: 100%;
+    }
+  
+    .cadre-lieu {
+      min-height: 300px;
+    }
+  
+    .description-cadre {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,0 +1,115 @@
+:root {
+  --principal: #ea5c0d;
+  --seccolor: #b94503;
+  --jaune: #f7af3e;
+  --fond: #333333;
+  --secfond: #505050;
+}
+
+@font-face {
+  font-family: "dyno_saur";
+  src: url('./fonts/Dyno/Dyno\ Regular.ttf');
+}
+
+@font-face {
+  font-family: "dyno_saurB";
+  src: url('./fonts/Dyno/Dyno\ Bold.ttf');
+}
+
+@font-face {
+  font-family: "dyno_saurI";
+  src: url('./fonts/Dyno/Dyno\ Italic.ttf');
+}
+
+@font-face {
+  font-family: "cicle_base";
+  src: url('./fonts/Cicle/Cicle\ Gordita.ttf');
+}
+
+.container th{
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+}
+
+.container {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 5em 0;
+}
+
+.container td,
+.container th {
+ padding:2%;
+}
+
+.container tr:nth-child(odd) {
+  background-color: #434242;
+}
+
+.container tr:nth-child(even) {
+  background-color: #3c3b3b;
+}
+
+.container th {
+  background-color:#333333;
+}
+
+.container td:first-child {
+  background-color: rgba(185, 69, 3, 0.6);
+}
+
+.container tr:hover {
+  background-color: #464A52;
+  box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.container td:hover {
+  background-color: #f7af3e;
+  color: #ea5c0d;
+  font-weight: bold;
+
+  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+}
+
+
+.doubledivision {
+  display: flex;
+  text-align: justify;
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.meteo_trafic {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  width: 45%;
+  border-radius: 15px;
+  border: solid #f7af3e 5px;
+}
+
+.meteo_trafic:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.meteo_trafic p {
+  color: black;
+  font-family: "dyno_saur";
+}
+
+h3 {
+  margin: 50px 0;
+}
+
+.moovit{
+  text-align: center;
+  color:#f7af3e;
+  margin:5%;
+}

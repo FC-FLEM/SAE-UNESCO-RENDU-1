@@ -1,0 +1,92 @@
+.multibox {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 875px;
+    justify-content: space-between;
+}
+
+a .carte {
+    display: flex;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    flex: 1;
+    transition: 0.5s all ease;
+    font-family: 'dyno_saurB';
+    font-size: 2em;
+    align-items: center;
+}
+
+.mb-hotel {
+    background: linear-gradient(to bottom right,#dd7d7d, #b9701c);
+    box-shadow: 5px 5px #8f6d2d;
+}
+
+.mb-resto {
+    background: linear-gradient(to bottom right,#c3ec52, #0ba29d);
+    box-shadow: 5px 5px #31afab;
+}
+
+.mb-spots {
+    background: linear-gradient(to bottom right,#52c8ec, #184e68);
+    box-shadow: 5px 5px #386dd1;
+}
+
+.mb-lieux {
+    background: linear-gradient(to bottom right,#f1d532, #ebb319);
+    box-shadow: 5px 5px #ddd012;
+}
+
+.carte:hover {
+    flex: 2;
+}
+
+.emoji {
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+    width: 50%;
+}
+
+.a:hover > .emoji-legende {
+    display: block;
+}
+
+.emoji-legende {
+    text-align: center;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 1220px){
+    .multibox {
+        flex-direction: column;
+        width: 100%;
+        min-width: 280px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .emoji {
+        width: auto;
+        margin: 0;
+    }
+    .emoji-legende {
+        text-align: center;
+        display: block;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+    .carte {
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 1.5em;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

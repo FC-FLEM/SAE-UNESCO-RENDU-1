@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Doctype pour rester comforme aux standards -->
+<!-- lang pour accent pour synthèse vocale-->
+<html lang="fr">
+
+<head>
+    <!-- charset = encodage des caractères -->
+    <meta charset="UTF-8" />
+    <!-- viewport pour la mise en page mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link pour relier la feuille css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="connexion.css" />
+    <!-- Title pour le titre de l'onglet -->
+    <title>Connexion Admin</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico">
+</head>
+
+<body>
+
+    <div class="contenu">
+        <h1>Page Administrateur</h1>
+        <h3>Connexion</h3>
+        <div class='card'>
+            <div class="texte">
+                <form action="./php/connexion.php" method="POST">
+                    <label>Identifiant</label>
+                    <input type="text" name="id">
+                    <br>
+                    <label>Mot De Passe</label>
+                    <input type="password" name="mdp">
+                    <br>
+                    <input class="button" type="submit" value="Connexion" name="bouton-valider">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
